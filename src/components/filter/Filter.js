@@ -5,7 +5,7 @@ const Filter = ({ getParams, params }) => {
   const [toggle, setToggle] = useState(false);
   const [filterName, setFilterName] = useState("Filter by Region");
 
-  const regions = ["All", "Africa", "Americas", "Asia", "Europe", "Oceania"];
+  const regions = ["Africa", "Americas", "Asia", "Europe", "Oceania"];
 
   const toggleClick = () => {
     setToggle(() => !toggle);
