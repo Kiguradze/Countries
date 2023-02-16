@@ -1,0 +1,24 @@
+.toggle__theme-container {
+  height: 100px;
+  box-shadow: 0 0px 10px rgb(0 0 0 / 10%);
+}
+
+.theme__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.theme__box h2 {
+  cursor: pointer;
+}
+
+.theme__toggler {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}

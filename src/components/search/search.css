@@ -1,0 +1,49 @@
+.search__container {
+  width: 450px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 5%);
+}
+
+.search__input {
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  padding: 0 50px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+#light.search__input {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(200, 15%, 8%);
+}
+
+#dark .search__input {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(209, 23%, 22%);
+}
+
+#light .search__input::placeholder {
+  color: hsl(0, 0%, 52%);
+}
+
+#dark .search__input::placeholder {
+  color: hsl(0, 0%, 100%);
+}
+
+.search__container ion-icon {
+  font-size: 24px;
+  position: absolute;
+  left: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .search__container {
+    width: 100%;
+  }
+}

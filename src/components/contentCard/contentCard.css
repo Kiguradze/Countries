@@ -1,0 +1,52 @@
+.content__card {
+  width: 250px;
+  height: 350px;
+  padding-bottom: 20px;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 5%);
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: scale 0.1s linear;
+}
+
+.content__card:hover {
+  scale: 1.1;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.02);
+  border: 1px solid rgb(221, 220, 220);
+}
+
+#light .content__card {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(200, 15%, 8%);
+}
+
+#dark .content__card {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+
+.content__card img {
+  width: 100%;
+  height: 50%;
+}
+
+.card__text {
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.card__text span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card__country--name {
+  padding: 20px;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 768px) {
+  .content__card {
+    max-width: 100%;
+  }
+}

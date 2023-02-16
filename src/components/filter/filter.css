@@ -1,0 +1,77 @@
+.select__container {
+  width: 200px;
+  height: fit-content;
+  position: relative;
+  font-size: 14px;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 5%);
+}
+
+.select__btn {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.options {
+  position: absolute;
+  width: 200px;
+  margin-top: 5px;
+  list-style: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  line-height: 25px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 5%);
+}
+
+.option {
+  transition: all 0.1s ease-in-out;
+}
+
+.option:hover {
+  background-color: hsl(207, 26%, 17%);
+  scale: 1.5;
+  margin-left: 30px;
+}
+
+.option__text {
+  margin-left: 20px;
+}
+
+#light .select__btn:hover {
+  background-color: hsl(0, 0%, 98%);
+}
+
+#dark .select__btn:hover {
+  background-color: hsl(207, 26%, 17%);
+}
+
+#light .select__btn {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(200, 15%, 8%);
+}
+
+#dark .select__btn {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+
+#light .options {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(200, 15%, 8%);
+}
+
+#dark .options {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+
+#light .option:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
