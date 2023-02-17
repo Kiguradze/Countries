@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-
 import dataBase from "../../dataBase";
 import ContentCard from "../contentCard/ContentCard";
 import SearchBox from "../searchBox/SearchBox";

@@ -1,4 +1,3 @@
-// import data from "./data";
 import "./index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleChevronUp } from "@fortawesome/free-solid-svg-icons";
