@@ -2,6 +2,7 @@ import React from "react";
 import "./singleCountry.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeftLong } from "@fortawesome/free-solid-svg-icons";
+import { Opacity } from "@material-ui/icons";
 
 const SingleCountry = ({ country, onClick }) => {
   // const languages = country.languages((language) => language.name);
@@ -58,10 +59,21 @@ const SingleCountry = ({ country, onClick }) => {
           <div className="content__desc-borders">
             <p className="content__desc-borders--list">
               Border Countries:
-              {country.borders &&
+              {country.borders ? (
                 country.borders.map((border) => (
                   <span key={Math.random()}>{border}</span>
-                ))}
+                ))
+              ) : (
+                <p
+                  style={{
+                    fontSize: "14px",
+                    fontWeight: "normal",
+                    opacity: "0.8",
+                  }}
+                >
+                  None
+                </p>
+              )}
             </p>
           </div>
         </div>

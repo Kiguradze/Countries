@@ -12,6 +12,7 @@
 
 .theme__box h2 {
   cursor: pointer;
+  pointer-events: none;
 }
 
 .theme__toggler {
